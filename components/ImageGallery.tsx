@@ -53,19 +53,19 @@ export default function ImageGallery({ images }: { images: ImageRef[] }) {
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-ink-900/95 p-4">
           <button
             type="button"
-            className="absolute right-4 top-4 text-cream"
+            className="btn-icon absolute right-4 top-4"
             onClick={close}
             aria-label="Close"
           >
-            <X size={28} />
+            <X size={22} />
           </button>
           <button
             type="button"
             onClick={prev}
-            className="absolute left-4 text-cream"
+            className="btn-icon absolute left-4"
             aria-label="Previous"
           >
-            <ChevronLeft size={36} />
+            <ChevronLeft size={24} />
           </button>
           <div className="relative h-[80vh] w-full max-w-5xl">
             <Image
@@ -79,10 +79,10 @@ export default function ImageGallery({ images }: { images: ImageRef[] }) {
           <button
             type="button"
             onClick={next}
-            className="absolute right-4 text-cream"
+            className="btn-icon absolute right-4"
             aria-label="Next"
           >
-            <ChevronRight size={36} />
+            <ChevronRight size={24} />
           </button>
         </div>
       )}

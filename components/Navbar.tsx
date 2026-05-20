@@ -70,7 +70,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Link href="/contact" className="btn-outline">
+          <Link href="/contact" className="btn-glass !px-8 !py-3">
             Enquire
           </Link>
         </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           aria-expanded={open}
-          className="text-cream md:hidden"
+          className="inline-flex items-center justify-center p-2 text-cream transition-colors hover:text-gold-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -101,7 +101,7 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact" className="btn-primary mt-2">
+          <Link href="/contact" className="btn-glass mt-2">
             Enquire
           </Link>
         </div>

@@ -113,7 +113,7 @@ export default function PropertyFilter({ properties }: { properties: Property[] 
           />
           <button
             type="button"
-            className="btn-outline col-span-2 md:col-span-6 md:w-fit"
+            className="btn-glass-dark col-span-2 md:col-span-6 md:w-fit !px-8 !py-3"
             onClick={() => setFilters(EMPTY)}
           >
             Clear filters

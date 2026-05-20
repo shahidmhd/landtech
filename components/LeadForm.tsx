@@ -150,7 +150,11 @@ export default function LeadForm({
 
       {error && <p className="mt-4 text-sm text-red-500">{error}</p>}
 
-      <button type="submit" disabled={isSubmitting} className="btn-primary mt-6 w-full md:w-auto">
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className={`${dark ? 'btn-glass' : 'btn-glass-dark'} mt-6 w-full md:w-auto`}
+      >
         {isSubmitting ? 'Sending…' : 'Submit Enquiry'}
       </button>
     </form>

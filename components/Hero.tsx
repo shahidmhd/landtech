@@ -151,12 +151,12 @@ export default function Hero({
           {(primaryCta || secondaryCta) && (
             <div className="hero__cta mt-10 flex flex-wrap gap-4">
               {primaryCta && (
-                <Link href={primaryCta.href} className="btn-primary">
+                <Link href={primaryCta.href} className="btn-glass">
                   {primaryCta.label}
                 </Link>
               )}
               {secondaryCta && (
-                <Link href={secondaryCta.href} className="btn-outline">
+                <Link href={secondaryCta.href} className="btn-glass">
                   {secondaryCta.label}
                 </Link>
               )}

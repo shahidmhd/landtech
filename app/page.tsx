@@ -97,7 +97,7 @@ export default function HomePage() {
         </div>
 
         <div className="container mt-12 text-center">
-          <Link href="/properties" className="btn-outline">
+          <Link href="/properties" className="btn-glass">
             Browse All Properties
           </Link>
         </div>
